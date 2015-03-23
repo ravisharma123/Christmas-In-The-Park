@@ -7,21 +7,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class MainActivity extends ActionBarActivity {
 
-    private Button mFB;
-    private Button mInsta;
-    private Button mTwitter;
-    private Button mYT;
+    private ImageButton mFB;
+    private ImageButton mInsta;
+    private ImageButton mTwitter;
+    private ImageButton mYT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mFB = (Button)findViewById(R.id.fbicon);
+        mFB = (ImageButton)findViewById(R.id.fbicon);
         mFB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,7 +31,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        mTwitter = (Button)findViewById(R.id.twtricon);
+        mTwitter = (ImageButton)findViewById(R.id.twtricon);
         mTwitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        mYT = (Button)findViewById(R.id.yticon);
+        mYT = (ImageButton)findViewById(R.id.yticon);
         mYT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +49,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        mInsta = (Button)findViewById(R.id.instaicon);
+        mInsta = (ImageButton)findViewById(R.id.instaicon);
         mInsta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

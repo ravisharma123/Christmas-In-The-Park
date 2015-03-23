@@ -21,8 +21,8 @@
         android:id="@+id/twtricon"
         android:src="@drawable/twtricon"
         android:background="@null"
-        android:layout_marginLeft="44dp"
-        android:layout_marginStart="44dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/fbicon"
         android:layout_toEndOf="@+id/fbicon" />
