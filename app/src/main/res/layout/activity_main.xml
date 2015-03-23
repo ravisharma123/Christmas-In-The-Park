@@ -8,36 +8,44 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
+        android:id="@+id/fbicon"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/FBIcon"/>
+        android:src="@drawable/fbicon"
+        android:background="@null"/>
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton2"
+        android:id="@+id/twtricon"
+        android:src="@drawable/twtricon"
+        android:background="@null"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/imageButton"
-        android:layout_toEndOf="@+id/imageButton"
-        android:src="@drawable/TwitrIcon"/>
+        android:layout_toRightOf="@+id/fbicon"
+        android:layout_toEndOf="@+id/fbicon" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton3"
+        android:id="@+id/instaicon"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:src="@drawable/InstaIcon"/>
+        android:src="@drawable/instaicon"
+        android:background="@null"/>
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageButton4"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/imageButton3"
-        android:layout_toStartOf="@+id/imageButton3"
-        android:src="@drawable/YTIcon"/>
+        android:id="@+id/yticon"
+        android:src="@drawable/yticon"
+        android:background="@null"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_alignTop="@+id/instaicon"
+        android:layout_toLeftOf="@+id/instaicon"
+        android:layout_toStartOf="@+id/instaicon" />
 </RelativeLayout>
