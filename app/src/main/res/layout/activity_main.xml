@@ -1,51 +1,64 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@android:color/white"
+    tools:context=".MainActivity"
+    android:id="@+id/CITP">
+
+    <ImageButton android:id="@+id/imageButton" android:background="@android:color/transparent" android:layout_height="85dp" android:layout_width="85dp"
+        android:scaleType="fitXY" android:src="@drawable/ornamentball"
+        android:layout_marginTop="193dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageButton5" /><ImageButton android:id="@+id/imageButton2" android:background="@android:color/transparent" android:layout_height="85dp" android:layout_width="85dp" android:scaleType="fitXY" android:src="@drawable/ornamentball"
+    android:layout_below="@+id/imageButton"
+    android:layout_toEndOf="@+id/imageButton8" /><ImageButton android:id="@+id/imageButton3" android:background="@android:color/transparent" android:layout_height="85dp" android:layout_width="85dp" android:scaleType="fitXY" android:src="@drawable/ornamentball"
+    android:layout_below="@+id/imageButton2"
+    android:layout_toStartOf="@+id/imageButton9" /><ImageButton android:id="@+id/imageButton4" android:background="@android:color/transparent" android:layout_height="85dp" android:layout_width="85dp" android:layout_alignStart="@+id/imageButton" android:scaleType="fitXY" android:src="@drawable/ornamentball" android:layout_alignTop="@+id/imageButton2" android:layout_marginStart="66dp"/><ImageButton android:id="@+id/imageButton5" android:background="@android:color/transparent" android:layout_height="85dp" android:layout_width="85dp" android:scaleType="fitXY" android:src="@drawable/ornamentball"
+    android:layout_below="@+id/imageButton2"
+    android:layout_centerHorizontal="true" /><ImageButton android:id="@+id/imageButton6" android:background="@android:color/transparent" android:layout_height="85dp" android:layout_width="85dp" android:scaleType="fitXY" android:src="@drawable/ornamentball"
+    android:layout_below="@+id/imageButton4"
+    android:layout_toEndOf="@+id/imageView" /><ImageView android:id="@+id/imageView" android:background="@android:color/transparent" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/citplogo"
+    android:layout_alignBottom="@+id/imageButton7"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="41dp" /><ImageButton android:id="@+id/imageButton7" android:background="@android:color/transparent" android:layout_height="100dp" android:layout_width="100dp" android:scaleType="fitXY" android:src="@drawable/bells"
+    android:layout_marginBottom="53dp"
+    android:layout_alignBottom="@+id/imageButton"
+    android:layout_alignEnd="@+id/imageButton6" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/fbicon"
+        android:id="@+id/imageButton8"
+        android:src="@drawable/facebook"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/fbicon"
-        android:background="@null"/>
-
+        android:layout_alignParentStart="true" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/twtricon"
-        android:src="@drawable/twtricon"
-        android:background="@null"
-        android:layout_marginLeft="46dp"
-        android:layout_marginStart="46dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/fbicon"
-        android:layout_toEndOf="@+id/fbicon" />
-
+        android:id="@+id/imageButton9"
+        android:src="@drawable/twitter"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/imageButton10"
+        android:layout_alignEnd="@+id/imageButton2" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/instaicon"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/instaicon"
-        android:background="@null"/>
-
+        android:id="@+id/imageButton10"
+        android:src="@drawable/instagram"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/imageButton11"
+        android:layout_toStartOf="@+id/imageButton7" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/yticon"
-        android:src="@drawable/yticon"
-        android:background="@null"
-        android:layout_marginRight="46dp"
-        android:layout_marginEnd="46dp"
-        android:layout_alignTop="@+id/instaicon"
-        android:layout_toLeftOf="@+id/instaicon"
-        android:layout_toStartOf="@+id/instaicon" />
+        android:id="@+id/imageButton11"
+        android:src="@drawable/youtube"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/imageButton8"
+        android:layout_alignStart="@+id/imageButton6" />
 </RelativeLayout>
