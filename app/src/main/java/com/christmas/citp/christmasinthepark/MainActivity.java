@@ -1,6 +1,6 @@
 package com.christmas.citp.christmasinthepark;
-
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,51 +12,54 @@ import android.widget.ImageButton;
 
 public class MainActivity extends ActionBarActivity {
 
-    private ImageButton mFB;
-    private ImageButton mInsta;
-    private ImageButton mTwitter;
-    private ImageButton mYT;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageButton donateButton =(ImageButton) findViewById(R.id.imageButton7);
+        ImageButton fbButton =(ImageButton) findViewById(R.id.imageButton8);
+        ImageButton twitterButton = (ImageButton) findViewById(R.id.imageButton9);
+        ImageButton instaButton = (ImageButton) findViewById(R.id.imageButton10);
+        ImageButton uTubeButton = (ImageButton) findViewById(R.id.imageButton11);
 
-        mFB = (ImageButton)findViewById(R.id.fbicon);
-        mFB.setOnClickListener(new View.OnClickListener() {
+
+        donateButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // Intent to open FB Activity
-                // startActivity();
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=p2L6x-x6A_Udwj90TXXXNmKJD0G3ufdFrJKkwfB_ODoou6X4BfBuzkJCi4q&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c"));
+                startActivity(i);
+            }
+        });
+        fbButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/183825781669765"));
+                Intent chooser = Intent.createChooser(i,"facebook");
+                startActivity(chooser);
+            }
+        });
+        twitterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/xmasintheparksj"));
+                startActivity(i);
+            }
+        });
+        instaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/christmasintheparksj"));
+                startActivity(i);
+            }
+        });
+        uTubeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/user/xmasinthepark"));
+                startActivity(i);
             }
         });
 
-        mTwitter = (ImageButton)findViewById(R.id.twtricon);
-        mTwitter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Intent to open Twitter Activity
-                // startActivity();
-            }
-        });
-
-        mYT = (ImageButton)findViewById(R.id.yticon);
-        mYT.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Intent to open Youtube Activity
-                // startActivity();
-            }
-        });
-
-        mInsta = (ImageButton)findViewById(R.id.instaicon);
-        mInsta.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Intent to open Instagram Activity
-                // startActivity();
-            }
-        });
     }
 
 
