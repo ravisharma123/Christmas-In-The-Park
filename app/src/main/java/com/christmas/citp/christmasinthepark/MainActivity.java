@@ -1,6 +1,7 @@
 package com.christmas.citp.christmasinthepark;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,45 +17,58 @@ public class MainActivity extends ActionBarActivity {
     private ImageButton mInsta;
     private ImageButton mTwitter;
     private ImageButton mYT;
+    private ImageButton mDonate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mFB = (ImageButton)findViewById(R.id.fbicon);
+        mFB = (ImageButton) findViewById(R.id.fbicon);
         mFB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Intent to open FB Activity
-                // startActivity();
+                Intent fb = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/183825781669765"));
+                Intent chooser = Intent.createChooser(fb, "Facebook"); // Ravi's
+                startActivity(chooser);
             }
         });
 
-        mTwitter = (ImageButton)findViewById(R.id.twtricon);
+        mTwitter = (ImageButton) findViewById(R.id.twtricon);
         mTwitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Intent to open Twitter Activity
-                // startActivity();
+                Intent twitter = new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?user_id=292451521"));
+                startActivity(twitter);
             }
         });
 
-        mYT = (ImageButton)findViewById(R.id.yticon);
+        mYT = (ImageButton) findViewById(R.id.yticon);
         mYT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Intent to open Youtube Activity
-                // startActivity();
+                Intent yt = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/user/xmasinthepark"));
+                startActivity(yt);
             }
         });
 
-        mInsta = (ImageButton)findViewById(R.id.instaicon);
+        mInsta = (ImageButton) findViewById(R.id.instaicon);
         mInsta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Intent to open Instagram Activity
-                // startActivity();
+                // Ravi's Instagram Link
+                Intent insta = new Intent(Intent.ACTION_VIEW, Uri.parse("https://instagram.com/christmasintheparksj"));
+                startActivity(insta);
+            }
+        });
+
+        mDonate = (ImageButton) findViewById(R.id.donate); // Ravi's version cleaned up
+        mDonate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Ravi's Donate Link
+                Intent donate = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=p2L6x-x6A_Udwj90TXXXNmKJD0G3ufdFrJKkwfB_ODoou6X4BfBuzkJCi4q&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c"));
+                startActivity(donate);
             }
         });
     }
