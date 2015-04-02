@@ -1,51 +1,70 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<android.support.v4.widget.DrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/drawer_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fbicon"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/fbicon"
-        android:background="@null"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:background="@drawable/citp_background" >
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/twtricon"
-        android:src="@drawable/twtricon"
-        android:background="@null"
-        android:layout_marginLeft="46dp"
-        android:layout_marginStart="46dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/fbicon"
-        android:layout_toEndOf="@+id/fbicon" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fbicon"
+            android:src="@drawable/fbicon"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/instaicon"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:src="@drawable/instaicon"
-        android:background="@null"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twtricon"
+            android:src="@drawable/twtricon"
+            android:background="@null"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:layout_alignTop="@+id/fbicon"
+            android:layout_toRightOf="@+id/fbicon"
+            android:layout_toEndOf="@+id/fbicon" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/yticon"
-        android:src="@drawable/yticon"
-        android:background="@null"
-        android:layout_marginRight="46dp"
-        android:layout_marginEnd="46dp"
-        android:layout_alignTop="@+id/instaicon"
-        android:layout_toLeftOf="@+id/instaicon"
-        android:layout_toStartOf="@+id/instaicon" />
-</RelativeLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/instaicon"
+            android:src="@drawable/instaicon"
+            android:background="@null"
+            android:layout_alignTop="@+id/yticon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yticon"
+            android:src="@drawable/yticon"
+            android:background="@null"
+            android:layout_marginRight="41dp"
+            android:layout_marginEnd="41dp"
+            android:layout_alignTop="@+id/twtricon"
+            android:layout_toLeftOf="@+id/instaicon"
+            android:layout_toStartOf="@+id/instaicon" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee" />
+
+</android.support.v4.widget.DrawerLayout>
+
+
