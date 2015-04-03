@@ -11,7 +11,7 @@ android:layout_height="match_parent">
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-        android:background="@drawable/citp_background" >
+        android:background="@drawable/citp_background1080">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -38,10 +38,10 @@ android:layout_height="match_parent">
             android:id="@+id/ornament2"
             android:src="@drawable/ornament"
             android:background="@null"
-            android:layout_marginTop="34dp"
             android:layout_below="@+id/citp_logo"
-            android:layout_toRightOf="@+id/ornament7"
-            android:layout_toEndOf="@+id/ornament7" />
+            android:layout_toLeftOf="@+id/ornament1"
+            android:layout_toStartOf="@+id/ornament1"
+            android:layout_marginTop="42dp" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -49,9 +49,9 @@ android:layout_height="match_parent">
             android:id="@+id/ornament3"
             android:src="@drawable/ornament"
             android:background="@null"
-            android:layout_above="@+id/ornament4"
-            android:layout_toLeftOf="@+id/ornament9"
-            android:layout_toStartOf="@+id/ornament9" />
+            android:layout_alignTop="@+id/ornament2"
+            android:layout_toRightOf="@+id/ornament5"
+            android:layout_toEndOf="@+id/ornament5" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -59,10 +59,10 @@ android:layout_height="match_parent">
             android:id="@+id/ornament4"
             android:src="@drawable/ornament"
             android:background="@null"
-            android:layout_marginTop="29dp"
+            android:layout_marginTop="42dp"
             android:layout_below="@+id/ornament2"
-            android:layout_alignRight="@+id/twitter_icon"
-            android:layout_alignEnd="@+id/twitter_icon" />
+            android:layout_alignRight="@+id/citp_logo"
+            android:layout_alignEnd="@+id/citp_logo" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -70,9 +70,9 @@ android:layout_height="match_parent">
             android:id="@+id/ornament5"
             android:src="@drawable/ornament"
             android:background="@null"
-            android:layout_alignTop="@+id/ornament4"
-            android:layout_alignLeft="@+id/ornament8"
-            android:layout_alignStart="@+id/ornament8" />
+            android:layout_above="@+id/ornament7"
+            android:layout_toRightOf="@+id/ornament2"
+            android:layout_toEndOf="@+id/ornament2" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -81,8 +81,8 @@ android:layout_height="match_parent">
             android:src="@drawable/ornament"
             android:background="@null"
             android:layout_alignTop="@+id/ornament5"
-            android:layout_alignLeft="@+id/yt_icon"
-            android:layout_alignStart="@+id/yt_icon" />
+            android:layout_alignLeft="@+id/donate_icon"
+            android:layout_alignStart="@+id/donate_icon" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -90,10 +90,10 @@ android:layout_height="match_parent">
             android:id="@+id/ornament7"
             android:src="@drawable/ornament"
             android:background="@null"
-            android:layout_above="@+id/twitter_icon"
+            android:layout_marginTop="44dp"
+            android:layout_below="@+id/ornament4"
             android:layout_toRightOf="@+id/fb_icon"
-            android:layout_toEndOf="@+id/fb_icon"
-            android:layout_marginBottom="49dp" />
+            android:layout_toEndOf="@+id/fb_icon" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -102,7 +102,8 @@ android:layout_height="match_parent">
             android:src="@drawable/ornament"
             android:background="@null"
             android:layout_alignTop="@+id/ornament7"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignLeft="@+id/ornament5"
+            android:layout_alignStart="@+id/ornament5" />
 
         <ImageButton
             android:layout_width="wrap_content"
