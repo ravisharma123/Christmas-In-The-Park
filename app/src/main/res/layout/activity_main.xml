@@ -16,6 +16,117 @@ android:layout_height="match_parent">
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/citp_logo"
+            android:src="@drawable/citp_logo"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ornament1"
+            android:src="@drawable/ornament"
+            android:background="@null"
+            android:layout_alignBottom="@+id/donate_icon"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ornament2"
+            android:src="@drawable/ornament"
+            android:background="@null"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/citp_logo"
+            android:layout_toRightOf="@+id/ornament7"
+            android:layout_toEndOf="@+id/ornament7" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ornament3"
+            android:src="@drawable/ornament"
+            android:background="@null"
+            android:layout_above="@+id/ornament4"
+            android:layout_toLeftOf="@+id/ornament9"
+            android:layout_toStartOf="@+id/ornament9" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ornament4"
+            android:src="@drawable/ornament"
+            android:background="@null"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/ornament2"
+            android:layout_alignRight="@+id/twitter_icon"
+            android:layout_alignEnd="@+id/twitter_icon" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ornament5"
+            android:src="@drawable/ornament"
+            android:background="@null"
+            android:layout_alignTop="@+id/ornament4"
+            android:layout_alignLeft="@+id/ornament8"
+            android:layout_alignStart="@+id/ornament8" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ornament6"
+            android:src="@drawable/ornament"
+            android:background="@null"
+            android:layout_alignTop="@+id/ornament5"
+            android:layout_alignLeft="@+id/yticon"
+            android:layout_alignStart="@+id/yticon" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ornament7"
+            android:src="@drawable/ornament"
+            android:background="@null"
+            android:layout_above="@+id/twitter_icon"
+            android:layout_toRightOf="@+id/fb_icon"
+            android:layout_toEndOf="@+id/fb_icon"
+            android:layout_marginBottom="49dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ornament8"
+            android:src="@drawable/ornament"
+            android:background="@null"
+            android:layout_alignTop="@+id/ornament7"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ornament9"
+            android:src="@drawable/ornament"
+            android:background="@null"
+            android:layout_alignTop="@+id/ornament8"
+            android:layout_toLeftOf="@+id/insta_icon"
+            android:layout_toStartOf="@+id/insta_icon" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/donate_icon"
+            android:src="@drawable/donate"
+            android:background="@null"
+            android:layout_alignBottom="@+id/citp_logo"
+            android:layout_alignRight="@+id/insta_icon"
+            android:layout_alignEnd="@+id/insta_icon" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/fb_icon"
             android:src="@drawable/fb_icon"
             android:background="@null"

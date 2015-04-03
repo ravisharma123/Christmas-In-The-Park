@@ -51,7 +51,7 @@ public class MainActivity extends ActionBarActivity {
         setupDrawer();
 
         // BUTTONS
-        mFB = (ImageButton) findViewById(R.id.fbicon);
+        mFB = (ImageButton) findViewById(R.id.fb_icon);
         mFB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,7 +69,7 @@ public class MainActivity extends ActionBarActivity {
                 }
         });
 
-        mTwitter = (ImageButton) findViewById(R.id.twtricon);
+        mTwitter = (ImageButton) findViewById(R.id.twitter_icon);
         mTwitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,7 +87,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        mInsta = (ImageButton) findViewById(R.id.instaicon);
+        mInsta = (ImageButton) findViewById(R.id.insta_icon);
         mInsta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,7 +97,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        /* mDonate = (ImageButton) findViewById(R.id.donate); // Ravi's version cleaned up
+        mDonate = (ImageButton) findViewById(R.id.donate_icon); // Ravi's version cleaned up
         mDonate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -105,7 +105,7 @@ public class MainActivity extends ActionBarActivity {
                 Intent donate = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=p2L6x-x6A_Udwj90TXXXNmKJD0G3ufdFrJKkwfB_ODoou6X4BfBuzkJCi4q&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c"));
                 startActivity(donate);
             }
-        }); */
+        });
     }
 
     // Keeps drawer icon in sync with the drawer opening
