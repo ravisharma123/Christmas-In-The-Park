@@ -81,8 +81,8 @@ android:layout_height="match_parent">
             android:src="@drawable/ornament"
             android:background="@null"
             android:layout_alignTop="@+id/ornament5"
-            android:layout_alignLeft="@+id/yticon"
-            android:layout_alignStart="@+id/yticon" />
+            android:layout_alignLeft="@+id/yt_icon"
+            android:layout_alignStart="@+id/yt_icon" />
 
         <ImageButton
             android:layout_width="wrap_content"

@@ -108,13 +108,6 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
-    // Keeps drawer icon in sync with the drawer opening
-    @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        mDrawerToggle.syncState();
-    }
-
     // Keep objects in sync when rotating landscape/portrait
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
