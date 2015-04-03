@@ -16,32 +16,32 @@ android:layout_height="match_parent">
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/fbicon"
-            android:src="@drawable/fbicon"
+            android:id="@+id/fb_icon"
+            android:src="@drawable/fb_icon"
             android:background="@null"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/twtricon"
-            android:src="@drawable/twtricon"
+            android:id="@+id/twitter_icon"
+            android:src="@drawable/twitter_icon"
             android:background="@null"
-            android:layout_marginLeft="41dp"
-            android:layout_marginStart="41dp"
-            android:layout_alignTop="@+id/fbicon"
-            android:layout_toRightOf="@+id/fbicon"
-            android:layout_toEndOf="@+id/fbicon" />
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_alignTop="@+id/fb_icon"
+            android:layout_toRightOf="@+id/fb_icon"
+            android:layout_toEndOf="@+id/fb_icon" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/instaicon"
-            android:src="@drawable/instaicon"
+            android:id="@+id/insta_icon"
+            android:src="@drawable/insta_icon"
             android:background="@null"
-            android:layout_alignTop="@+id/yticon"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
@@ -49,13 +49,13 @@ android:layout_height="match_parent">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/yticon"
-            android:src="@drawable/yticon"
+            android:src="@drawable/yt_icon"
             android:background="@null"
-            android:layout_marginRight="41dp"
-            android:layout_marginEnd="41dp"
-            android:layout_alignTop="@+id/twtricon"
-            android:layout_toLeftOf="@+id/instaicon"
-            android:layout_toStartOf="@+id/instaicon" />
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_alignTop="@+id/twitter_icon"
+            android:layout_toLeftOf="@+id/insta_icon"
+            android:layout_toStartOf="@+id/insta_icon" />
     </RelativeLayout>
 
     <ListView
