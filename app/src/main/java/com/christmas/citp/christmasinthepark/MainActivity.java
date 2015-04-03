@@ -113,6 +113,12 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mDrawerToggle.syncState();
+    }
+
     // Keep objects in sync when rotating landscape/portrait
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
@@ -147,7 +153,6 @@ public class MainActivity extends ActionBarActivity {
     }
 
     // HELPER METHODS
-
     private void addDrawerItems() {
         String[] navArray = {"Item 1", "Item 2", "Item 3", "Item 4", "Item 5"};
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, navArray);
