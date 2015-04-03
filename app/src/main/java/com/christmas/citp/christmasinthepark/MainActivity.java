@@ -58,7 +58,7 @@ public class MainActivity extends ActionBarActivity {
                 // CHECK IF FB IS INSTALLED. If not, open page in Browser
                     boolean installed = appInstalledOrNot("com.facebook.katana");
                     if (installed) {
-                        // Ravi's code
+                        // Ravi's FB Chooser
                         Intent fb = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/183825781669765"));
                         Intent chooser = Intent.createChooser(fb,"facebook");
                         startActivity(chooser);
@@ -78,7 +78,7 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        mYT = (ImageButton) findViewById(R.id.yticon);
+        mYT = (ImageButton) findViewById(R.id.yt_icon);
         mYT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -159,7 +159,7 @@ android:layout_height="match_parent">
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/yticon"
+            android:id="@+id/yt_icon"
             android:src="@drawable/yt_icon"
             android:background="@null"
             android:layout_marginRight="40dp"
