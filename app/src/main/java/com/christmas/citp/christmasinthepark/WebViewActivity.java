@@ -12,6 +12,10 @@ public class WebViewActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
+
+        String url = getIntent().getStringExtra("Url");
+
+
     }
 
 

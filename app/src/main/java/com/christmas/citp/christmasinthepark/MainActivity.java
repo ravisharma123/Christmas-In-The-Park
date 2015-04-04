@@ -128,7 +128,7 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View view) {
                 Intent faq = new Intent(MainActivity.this, WebViewActivity.class);
-                faq.putExtra("")
+                faq.putExtra("Url", "http://christmasinthepark.com/faq.html");
                 startActivity(faq);
             }
         });
