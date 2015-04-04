@@ -106,8 +106,7 @@ public class MainActivity extends ActionBarActivity {
         mDonate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Ravi's Donate Link
-                Intent donate = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=p2L6x-x6A_Udwj90TXXXNmKJD0G3ufdFrJKkwfB_ODoou6X4BfBuzkJCi4q&dispatch=5885d80a13c0db1f8e263663d3faee8de62a88b92df045c56447d40d60b23a7c"));
+                Intent donate = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.giveffect.com/charities/704"));
                 startActivity(donate);
             }
         });
@@ -144,8 +143,8 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-        // Checking if the user clicked on the Navigation Drawer
 
+        // Checking if the user clicked on the Navigation Drawer
         if (mDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
