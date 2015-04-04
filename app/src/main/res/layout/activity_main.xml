@@ -59,10 +59,10 @@ android:layout_height="match_parent">
             android:id="@+id/ornament4"
             android:src="@drawable/ornament"
             android:background="@null"
-            android:layout_marginTop="42dp"
+            android:layout_marginTop="43dp"
             android:layout_below="@+id/ornament2"
-            android:layout_alignRight="@+id/citp_logo"
-            android:layout_alignEnd="@+id/citp_logo" />
+            android:layout_alignLeft="@+id/ornament7"
+            android:layout_alignStart="@+id/ornament7" />
 
         <ImageButton
             android:layout_width="wrap_content"
