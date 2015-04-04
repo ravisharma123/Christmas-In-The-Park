@@ -124,6 +124,14 @@ public class MainActivity extends ActionBarActivity {
 
         // ORNAMENTS
         mOrn1 = (ImageButton) findViewById(R.id.ornament1);
+        mOrn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent faq = new Intent(MainActivity.this, WebViewActivity.class);
+                faq.putExtra("")
+                startActivity(faq);
+            }
+        });
 
         mOrn2 = (ImageButton) findViewById(R.id.ornament2);
 
