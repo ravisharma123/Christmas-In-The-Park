@@ -16,6 +16,8 @@ public class WebViewActivity extends ActionBarActivity {
 
         String url = getIntent().getStringExtra("Url");
         WebView myWebView = (WebView) findViewById(R.id.webview);
+        myWebView.getSettings().setLoadWithOverviewMode(true);
+        myWebView.getSettings().setUseWideViewPort(true);
         myWebView.loadUrl(url);
 
     }
