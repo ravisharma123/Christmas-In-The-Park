@@ -32,6 +32,17 @@ public class MainActivity extends ActionBarActivity {
     private ImageButton mYT;
     private ImageButton mDonate;
 
+    // Ornament Button Variables
+    private ImageButton mOrn1;
+    private ImageButton mOrn2;
+    private ImageButton mOrn3;
+    private ImageButton mOrn4;
+    private ImageButton mOrn5;
+    private ImageButton mOrn6;
+    private ImageButton mOrn7;
+    private ImageButton mOrn8;
+    private ImageButton mOrn9;
+
     // Navigation Drawer Variables
     private ListView mDrawerList;
     private ArrayAdapter<String> mAdapter;
@@ -110,6 +121,26 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(donate);
             }
         });
+
+        // ORNAMENTS
+        mOrn1 = (ImageButton) findViewById(R.id.ornament1);
+
+        mOrn2 = (ImageButton) findViewById(R.id.ornament2);
+
+        mOrn3 = (ImageButton) findViewById(R.id.ornament3);
+
+        mOrn4 = (ImageButton) findViewById(R.id.ornament4);
+
+        mOrn5 = (ImageButton) findViewById(R.id.ornament5);
+
+        mOrn6 = (ImageButton) findViewById(R.id.ornament6);
+
+        mOrn7 = (ImageButton) findViewById(R.id.ornament7);
+
+        mOrn8 = (ImageButton) findViewById(R.id.ornament8);
+
+        mOrn9 = (ImageButton) findViewById(R.id.ornament9);
+
     }
 
     @Override
