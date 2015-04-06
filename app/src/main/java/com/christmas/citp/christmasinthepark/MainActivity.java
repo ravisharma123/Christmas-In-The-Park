@@ -1,9 +1,12 @@
 package com.christmas.citp.christmasinthepark;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -58,6 +61,7 @@ public class MainActivity extends ActionBarActivity {
         // ACTION BAR MODIFICATIONS
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#1c2e44")));
 
         // DRAWER
         mDrawerList = (ListView) findViewById(R.id.navList);
