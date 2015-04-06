@@ -59,12 +59,18 @@ category#android.intent.category.DEFAULT
 ADDED from AndroidManifest.xml:30:17
 	android:name
 		ADDED from AndroidManifest.xml:30:27
-activity#com.christmas.citp.christmasinthepark.WebViewActivity
+activity#com.christmas.citp.christmasinthepark.ContentViewActivity
 ADDED from AndroidManifest.xml:35:9
 	android:label
 		ADDED from AndroidManifest.xml:37:13
 	android:name
 		ADDED from AndroidManifest.xml:36:13
+intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:39:9
+action#android.intent.action.VIEW
+ADDED from AndroidManifest.xml:41:13
+	android:name
+		ADDED from AndroidManifest.xml:41:21
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:21.0.3:15:5

@@ -31,11 +31,15 @@
             </intent-filter>
         </activity>
 
-        <!-- WEBVIEW ACTIVITY -->
+        <!-- CONTENT VIEW ACTIVITY -->
         <activity
-            android:name=".WebViewActivity"
-            android:label="@string/title_activity_web_view" >
+            android:name=".ContentViewActivity"
+            android:label="@string/app_name" >
         </activity>
+        <intent-filter>
+            <category android:name="android.intent.category.DEFAULT" />
+            <action android:name="android.intent.action.VIEW" />
+        </intent-filter>
     </application>
 
 </manifest>

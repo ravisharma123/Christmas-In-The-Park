@@ -131,8 +131,8 @@ public class MainActivity extends ActionBarActivity {
         mOrn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent faq = new Intent(MainActivity.this, WebViewActivity.class);
-                faq.putExtra("Url", "http://christmasinthepark.com/faq.html");
+                Intent faq = new Intent(MainActivity.this, ContentViewActivity.class);
+                faq.putExtra("Url", "http://christmasinthepark.com/faq.html?json=get_recent_posts");
                 startActivity(faq);
             }
         });
