@@ -8,18 +8,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ss_bg"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/bankofthewest"
-        android:layout_marginBottom="44dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:layout_above="@+id/websitelink"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp" />
 
     <TextView
         android:layout_width="fill_parent"
